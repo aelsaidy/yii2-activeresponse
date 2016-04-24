@@ -71,6 +71,14 @@ class ActiveResponse extends Component {
         return $this;
     }
 
+ /**
+     * jQuery(#item).val(val)
+     */
+    function getval($item)
+    {
+        $this->result['actions'][] = array('act' => 'val', 'item' => $item);
+        return $this;
+    }
 
     /**
      * jQuery(#item).html(val)
